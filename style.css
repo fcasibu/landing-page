@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: Roboto, sans-serif;
+}
+
+/* Utilities */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #98c9a3;
+  border-radius: 5px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Hero Section */
+
+.hero {
+  background-color: #edeec9;
+  padding: 20px;
+  min-height: 420px;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-nav .links {
+  gap: 10px;
+}
+
+.hero-content {
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.hero-image {
+  width: 500px;
+  border-radius: 10px;
+}
+
+/* Info section */
+.info-section {
+  position: relative;
+  background-color: #dde7c7;
+  justify-content: flex-start;
+  min-height: 420px;
+  padding-top: 40px;
+}
+
+.info-items {
+  margin-top: 40px;
+  gap: 50px;
+}
+
+.item img {
+  width: 180px;
+  height: 200px;
+  border-radius: 10px;
+  border: 3px solid #98c9a3;
+}
+
+.item {
+  gap: 10px;
+}
