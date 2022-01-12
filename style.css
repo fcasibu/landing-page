@@ -71,9 +71,7 @@ ul {
   position: relative;
 }
 
-.header-logo img {
-  font-size: 50px;
-  font-weight: 900;
+.header-logo {
   position: absolute;
   top: 0;
   width: 70px;
@@ -114,7 +112,6 @@ ul {
 
 .hero-description {
   margin: 20px 0;
-  opacity: 0.8;
 }
 
 .left-hero .button {
@@ -156,7 +153,6 @@ ul {
 }
 
 .item {
-  cursor: pointer;
   flex-basis: 20%;
   gap: 10px;
   text-align: center;
@@ -215,10 +211,6 @@ ul {
   align-items: flex-start;
   flex-basis: 70%;
   gap: 10px;
-}
-
-.contact-description {
-  font-weight: 100;
 }
 
 .contact-container .button {
