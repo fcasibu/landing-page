@@ -1,18 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700;900&display=swap");
+:root {
+  --bg-color: #1f1e29;
+  --pink-light: rgba(var(--pink-rgb), 0.8);
+  --pink-rgb: 193, 61, 80;
+  --pink: #c13d50;
+  --primary-color: #35324c;
+  --text-color: #c3cad8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  color: black;
-  font-family: Roboto, sans-serif;
+  color: var(--text-color);
+  font-family: "Exo 2";
 }
 
 /* Utilities */
 
 a {
+  color: white;
   text-decoration: none;
-  color: black;
 }
 
 ul {
@@ -20,19 +31,27 @@ ul {
 }
 
 .button {
-  padding: 10px 20px;
-  background-color: #98c9a3;
+  background-color: var(--pink);
   border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.transparent {
+  background: none;
 }
 
 .flex {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-column {
@@ -43,54 +62,176 @@ ul {
   flex-wrap: wrap;
 }
 
-/* Hero Section */
-
-.hero {
-  background-color: #edeec9;
+/* Header */
+.header {
+  align-items: center;
+  background-color: var(--pink);
+  justify-content: space-between;
   padding: 20px;
-  min-height: 420px;
+  position: relative;
 }
 
-.navbar {
-  justify-content: space-between;
-  align-items: center;
+.header-logo img {
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  width: 70px;
 }
 
 .right-nav .links {
   gap: 10px;
 }
 
-.hero-content {
+/* Hero Section */
+.hero {
+  background-color: var(--bg-color);
+  min-height: 420px;
+  width: 100vw;
+  max-width: 100%;
+  padding: 40px 0;
+}
+
+.hero > .hero-content {
+  background-color: var(--primary-color);
+  border-radius: 15px;
   gap: 50px;
   margin: 20px 0;
+  padding: 50px;
+  width: 70%;
 }
 
-.hero-image {
-  width: 500px;
-  border-radius: 10px;
+/* left side of hero-content */
+.hero-content > .left-hero {
+  width: 40%;
+  flex: 1 1 auto;
 }
 
-/* Info section */
-.info-section {
+.hero-title {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.hero-description {
+  margin: 20px 0;
+  opacity: 0.8;
+}
+
+.left-hero .button {
+  opacity: 1;
   position: relative;
-  background-color: #dde7c7;
+  top: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+
+.left-hero .button:hover {
+  opacity: 0.7;
+  top: -2px;
+}
+
+/* right side of hero-content */
+.hero-content > .right-hero {
+  width: 50%;
+  flex: 1 1 auto;
+}
+
+.right-hero > .hero-image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Maps section */
+.maps-section {
+  background-color: #1f1e29;
   justify-content: flex-start;
   min-height: 420px;
-  padding-top: 40px;
+  padding: 40px 0;
+  position: relative;
 }
 
-.info-items {
-  margin-top: 40px;
+.maps-items {
+  flex-wrap: wrap;
   gap: 50px;
-}
-
-.item img {
-  width: 180px;
-  height: 200px;
-  border-radius: 10px;
-  border: 3px solid #98c9a3;
+  margin-top: 40px;
 }
 
 .item {
+  cursor: pointer;
+  flex-basis: 20%;
   gap: 10px;
+  text-align: center;
+}
+
+.item img {
+  border-radius: 50%;
+  border: 3px solid var(--pink);
+  height: 200px;
+  transition: box-shadow 0.5s, border-radius 0.5s;
+  width: 200px;
+}
+
+.item:hover img {
+  border-radius: 30%;
+  box-shadow: 0 0 20px 0 var(--pink-light);
+}
+
+/* Quote Section */
+.quote-section {
+  background-color: var(--bg-color);
+  min-height: 200px;
+  padding: 40px 0;
+}
+
+.quote {
+  color: var(--pink);
+  font-size: 80px;
+  font-style: italic;
+}
+
+.quote-author {
+  font-size: 30px;
+  font-weight: 700;
+  justify-content: flex-end;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: var(--bg-color);
+  min-height: 350px;
+  width: 100vw;
+  max-width: 100%;
+  padding: 40px 0;
+}
+
+.contact-container {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  gap: 20px;
+  padding: 30px;
+  width: 80%;
+}
+
+.contact-content {
+  align-items: flex-start;
+  flex-basis: 70%;
+  gap: 10px;
+}
+
+.contact-description {
+  font-weight: 100;
+}
+
+.contact-container .button {
+  border: 2px solid var(--pink);
+  transition: background-color 0.5s;
+}
+
+.contact-container .button:hover {
+  background-color: var(--pink);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--pink);
+  padding: 30px;
 }
