@@ -8,7 +8,7 @@ Sources:
   - Reddit User [660Bo](https://www.reddit.com/r/osugame/comments/ev7mxr/check_out_this_osu_logo_i_made/)
 - [info-item1.jpg](images/info-item1.jpg)
   - Osu Mapper [Settia](https://osu.ppy.sh/beatmapsets/1026767#osu/2527867)
-    - Artist [卜部ミチル] (https://www.pixiv.net/en/users/9435489)
+    - Artist [卜部ミチル](https://www.pixiv.net/en/users/9435489)
 - [info-item2.jpg](images/info-item2.jpg)
   - Osu Mapper [Luscent](https://osu.ppy.sh/beatmapsets/950550#osu/1994839)
     - Artist [芳野サク](https://www.pixiv.net/en/users/394827)
